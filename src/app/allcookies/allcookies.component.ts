@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {ThemePalette} from '@angular/material/core';
-
+import {StepService} from '../step.service';
 @Component({
   selector: 'app-allcookies',
   templateUrl: './allcookies.component.html',
@@ -8,11 +8,13 @@ import {ThemePalette} from '@angular/material/core';
 })
 export class AllcookiesComponent implements OnInit {
 
-  constructor() { }
+  constructor(private stepService: StepService){}
 
   ngOnInit(): void {
   }
-  color: ThemePalette = 'accent';
-  checked = false;
-  disabled = false;
+
+  Accept(){
+    this.stepService.nextStep();
+    
+  }
 }
