@@ -10,6 +10,7 @@ import { FormGroup, FormControl, FormsModule, ReactiveFormsModule } from '@angul
 import {MatButtonModule} from '@angular/material/button';
 import {MatSliderModule} from '@angular/material/slider';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import {ScrollingModule} from '@angular/cdk/scrolling';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import {MatSlideToggleModule} from '@angular/material/slide-toggle';
     BrowserAnimationsModule,
     MatSlideToggleModule,
     MatButtonModule,
-    MatSliderModule
+    MatSliderModule,
+    ScrollingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

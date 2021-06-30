@@ -1,34 +1,23 @@
 <div class="ter">
 
 <h1>Süti beállítások</h1>
+<cdk-virtual-scroll-viewport class="example-viewport" itemSize="60">
+    <dl class="example-dl">
+      <ng-container *cdkVirtualFor="let cookie of cookies">
+        <dt class="example-dt">
+            <div class="sutilistaelem" style="background-color: {{cookie.szin}};">
+                
+            <p class="cookie">{{cookie.suti}}</p>
+            <mat-slide-toggle class="slider" ></mat-slide-toggle>
+            </div>
+        </dt>
+        
+      </ng-container>
+    </dl>
+  </cdk-virtual-scroll-viewport>
 
 
-<div style="position:relative;background-color: #B1DDC4;top:10%;">
-<p class="cookie" style="position:relative;width: 517px;left: 16px;">Et harum quidem rerum facilis est et expedita distinctio</p>
-<mat-slide-toggle class="slider" style="top: 10%;"></mat-slide-toggle>
-</div>
-
-<div style="position:relative;top:15%">
-<p class="cookie" style="position:relative;width: 517px;left: 16px;top:15%">Et harum quidem rerum facilis est et expedita distinctio</p>
-<mat-slide-toggle class="slider" style="top: 10%;"></mat-slide-toggle>
-</div>
-
-<div style="position:relative;background-color: #B1DDC4;top:20%;">
-<p class="cookie" style="position:relative;width: 517px;left: 16px;">Et harum quidem rerum facilis est et expedita distinctio</p>
-<mat-slide-toggle class="slider" style="top: 10%;"></mat-slide-toggle>
-</div>
-
-<div style="position:relative;top:25%">
-<p class="cookie" style="position:relative;width: 517px;left: 16px;">Et harum quidem rerum facilis est et expedita distinctio</p>
-<mat-slide-toggle class="slider" style="top: 10%;"></mat-slide-toggle>
-
-</div>
-
-<div style="position:relative;background-color: #B1DDC4;top:30%;">
-<p class="cookie" style="position:relative;width: 517px;left: 16px;">Et harum quidem rerum facilis est et expedita distinctio</p>
-<mat-slide-toggle class="slider" style="top: 10%;"></mat-slide-toggle></div>
-
-<button class="acceptall" (click)="Accept()" style="position:relative;top:35%; left:55%"><p class="felirat">Összes elfogadása</p></button>
-<button class="acceptsome" (click)="Accept()" style="position:relative;top:35%; right:40%"><p class="felirat">Kiválasztottak elfogadása</p></button>
+  <button class="acceptall" (click)="Accept()" style="position:relative;top:25%; left:55%"><p class="felirat">Összes elfogadása</p></button>
+<button class="acceptsome" (click)="Accept()" style="position:relative;top:25%; right:40%"><p class="felirat">Kiválasztottak elfogadása</p></button>
 </div>
 
