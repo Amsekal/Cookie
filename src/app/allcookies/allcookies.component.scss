@@ -5,14 +5,34 @@
         background-color: #55AE3A ;
 }
 
+:host ::ng-deep .mat-slide-toggle-bar {
+    height: 0.7vw;
+    width: 2.8vw;
+  }
+  
+  :host   ::ng-deep .mat-slide-toggle-thumb {
+    height: 1vw;
+    width: 1vw;
+  }
+  
+  :host  ::ng-deep .mat-slide-toggle.mat-checked .mat-slide-toggle-thumb-container {
+      transform: translate3d(1.8vw,0,0) !important;
+  }
+  
+  :host  ::ng-deep .mat-slide-toggle-thumb-container {
+      width: 1.2vw;
+      height: 1.2vw;
+      top: -0.2vw;
+  }
+
 .ter{position: absolute;
     left: 0%;
     right: 0%;
     top: 0%;
     bottom: 0%;
     margin: auto;
-    width: 600px;
-    height: 700px;
+    width: 50vw;
+    height: 40vw;
     background: White;
     border-radius: 8px;}
 
@@ -26,8 +46,8 @@ top: 3%;
 font-family: Roboto;
 font-style: normal;
 font-weight: bold;
-font-size: 32px;
-line-height: 37px;
+font-size: 1.5vw;
+line-height: 2vw;
 text-align: center;
 
 color: #000000;
@@ -37,29 +57,31 @@ color: #000000;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 28px;
-    line-height: 33px;
+    font-size: 1.5vw;
+    line-height: 2vw;
     font-feature-settings: 'pnum' on, 'lnum' on;
-    width: 517px;
+    width: 40vw;
     color: #000000;
-    
+    margin-top: auto;
+    margin-bottom: auto;
 
     }
 
 .slider{
-    margin-top: 25px;
+    margin-top: auto;
+    margin-bottom: auto;
     position:relative;
-    
+
 
 
     }
 
 
-.acceptall{
+    .acceptall{
 
         cursor: pointer;
-        height: 50px;
-        width: 250px;
+        height: 2.5vw;
+        width: 18vw;
         background: #55AE3A;
         
         border: 1px solid #FFFFFF;
@@ -68,13 +90,13 @@ color: #000000;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 1px 2px #B4B4BB, 0px 2px 4px #D2D2D6;
         border-radius: 8px;
     }
-
-
-.acceptsome{
-
+    
+    
+    .acceptsome{
+    
         cursor: pointer;
-    height: 50px;
-    width: 300px;
+    height: 2.5vw;
+    width: 18vw;
     background: #363636;
     
     border: 1px solid #FFFFFF;
@@ -92,8 +114,8 @@ color: #000000;
         font-family: Work Sans;
         font-style: normal;
         font-weight: bold;
-        font-size: 16px;
-        line-height: 19px;
+        font-size: 0.8vw;
+        line-height: 0.2vw;
     
         align-items: center;
         text-align: center;
@@ -108,17 +130,18 @@ color: #000000;
     }
 
     .example-viewport {
-        height: 450px;
-        width: 600px;
+        width: 50vw;
+        height: 25vw;
         margin:auto;
-        top:20%;
+        top:4vw;
         
       }
       
       .example-item {
-        height: 50px;
+        height: 5vw;
       }
 
       .sutilistaelem{
         display: flex;
+        height: 5vw;
       }
