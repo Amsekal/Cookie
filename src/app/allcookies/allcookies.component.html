@@ -1,23 +1,26 @@
 <div class="ter">
 
-<h1>Süti beállítások</h1>
-<cdk-virtual-scroll-viewport class="example-viewport" itemSize="60">
+  <h1>Süti beállítások</h1>
+  <cdk-virtual-scroll-viewport class="example-viewport" itemSize="60">
     <dl class="example-dl">
       <ng-container *cdkVirtualFor="let cookie of cookies">
         <dt class="example-dt">
-            <div class="sutilistaelem" style="background-color: {{cookie.szin}};">
-                
+          <div class="sutilistaelem" style="background-color: {{cookie.szin}};">
+
             <p class="cookie">{{cookie.suti}}</p>
-            <mat-slide-toggle class="slider" ></mat-slide-toggle>
-            </div>
+            <mat-slide-toggle class="slider"></mat-slide-toggle>
+          </div>
         </dt>
-        
+
       </ng-container>
     </dl>
   </cdk-virtual-scroll-viewport>
 
 
-  <button class="acceptall" (click)="Accept()" style="position:relative;top:10vw; left:27vw"><p class="felirat">Összes elfogadása</p></button>
-<button class="acceptsome" (click)="Accept()" style="position:relative;top:10vw; right:15vw"><p class="felirat">Kiválasztottak elfogadása</p></button>
+  <button class="acceptall" (click)="Accept()" style="position:relative;top:10vw; left:27vw">
+    <p class="felirat">Összes elfogadása</p>
+  </button>
+  <button class="acceptsome" (click)="Accept()" style="position:relative;top:10vw; right:15vw">
+    <p class="felirat">Kiválasztottak elfogadása</p>
+  </button>
 </div>
-

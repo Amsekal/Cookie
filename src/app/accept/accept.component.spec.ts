@@ -8,9 +8,9 @@ describe('AcceptComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AcceptComponent ]
+      declarations: [AcceptComponent]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {
