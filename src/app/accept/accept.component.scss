@@ -1,5 +1,4 @@
 .suti {
-    position: absolute;
     left: 0%;
     right: 0%;
     top: 0%;
@@ -11,6 +10,25 @@
     background: white;
 }
 
+.sutiszoveg,
+.cim,
+.felirat {
+    font-family: Roboto;
+    font-style: normal;
+    line-height: 2vw;
+}
+
+.cim,
+.felirat {
+    text-align: center;
+    font-weight: bold;
+}
+
+.sutiszoveg,
+.cim {
+    color: #000000;
+}
+
 .sutiszoveg {
     position: relative;
     left: 1%;
@@ -18,75 +36,56 @@
     top: 5vw;
     bottom: 9.82%;
 
-    font-family: Roboto;
-    font-style: normal;
     font-weight: normal;
     font-size: 1.5vw;
-    line-height: 2vw;
-
-    color: #000000;
 }
-
-.cim {
+.cim,
+.suti {
     position: absolute;
+}
+.cim {
     left: 3.39vw;
     right: 84.79vw;
     top: 0vw;
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
     font-size: 2vw;
-    line-height: 2vw;
-    text-align: center;
     width: 25vw;
-    color: #000000;
 }
 .zold {
     color: green;
     text-decoration: underline;
 }
 
-.acceptall {
+.acceptall,
+.acceptsome {
     cursor: pointer;
-    height: 2.5vw;
-    width: 18vw;
-    background: #55ae3a;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 1px 2px #b4b4bb, 0px 2px 4px #d2d2d6;
+    border-radius: 8px;
 
     border: 1px solid #ffffff;
     box-sizing: border-box;
+    height: 2.5vw;
+    width: 18vw;
+}
 
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 1px 2px #b4b4bb, 0px 2px 4px #d2d2d6;
-    border-radius: 8px;
+.acceptall {
+    background: #55ae3a;
 }
 
 .acceptsome {
-    cursor: pointer;
-    height: 2.5vw;
-    width: 18vw;
     background: #363636;
-
-    border: 1px solid #ffffff;
-    box-sizing: border-box;
-
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 1px 2px #b4b4bb, 0px 2px 4px #d2d2d6;
-    border-radius: 8px;
-
-    margin: 0px 8px;
 }
 
 .felirat {
     font-family: Work Sans;
-    font-style: normal;
-    font-weight: bold;
     font-size: 0.8vw;
     line-height: 0.2vw;
 
     align-items: center;
-    text-align: center;
     text-transform: uppercase;
 
     color: #ffffff;
-
+}
+.acceptsome,
+.felirat {
     margin: 0px 8px;
 }

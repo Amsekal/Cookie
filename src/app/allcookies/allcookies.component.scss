@@ -25,106 +25,97 @@
     height: 1.2vw;
     top: -0.2vw;
 }
-
+h1,
 .ter {
     position: absolute;
     left: 0%;
     right: 0%;
+}
+.ter {
     top: 0%;
     bottom: 0%;
-    margin: auto;
-    width: 50vw;
+   
     height: 40vw;
     background: White;
     border-radius: 8px;
 }
-
-h1 {
-    position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 3%;
-
+h1,
+.cookie {
     font-family: Roboto;
     font-style: normal;
+    font-size: 1.5vw;
+    line-height: 2vw;
+    color: #000000;
+}
+h1 {
+    top: 3%;
+
     font-weight: bold;
     font-size: 1.5vw;
     line-height: 2vw;
     text-align: center;
-
-    color: #000000;
 }
-
-.cookie {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1.5vw;
-    line-height: 2vw;
-    font-feature-settings: "pnum" on, "lnum" on;
-    width: 40vw;
-    color: #000000;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
+.cookie,
 .slider {
     margin-top: auto;
     margin-bottom: auto;
+}
+.cookie {
+    font-weight: normal;
+
+    font-feature-settings: "pnum" on, "lnum" on;
+    width: 40vw;
+}
+
+.slider {
     position: relative;
 }
 
-.acceptall {
+.acceptall,
+.acceptsome {
     cursor: pointer;
-    height: 2.5vw;
-    width: 18vw;
-    background: #55ae3a;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 1px 2px #b4b4bb, 0px 2px 4px #d2d2d6;
+    border-radius: 8px;
 
     border: 1px solid #ffffff;
     box-sizing: border-box;
+    height: 2.5vw;
+    width: 18vw;
+}
 
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 1px 2px #b4b4bb, 0px 2px 4px #d2d2d6;
-    border-radius: 8px;
+.acceptall {
+    background: #55ae3a;
 }
 
 .acceptsome {
-    cursor: pointer;
-    height: 2.5vw;
-    width: 18vw;
     background: #363636;
-
-    border: 1px solid #ffffff;
-    box-sizing: border-box;
-
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 1px 2px #b4b4bb, 0px 2px 4px #d2d2d6;
-    border-radius: 8px;
-
-    margin: 0px 8px;
 }
 
 .felirat {
     font-family: Work Sans;
-    font-style: normal;
-    font-weight: bold;
     font-size: 0.8vw;
     line-height: 0.2vw;
 
     align-items: center;
-    text-align: center;
     text-transform: uppercase;
 
     color: #ffffff;
-
+}
+.acceptsome,
+.felirat {
     margin: 0px 8px;
 }
 
 .example-viewport {
-    width: 50vw;
     height: 25vw;
-    margin: auto;
+
     top: 4vw;
 }
-
+.ter,
+.example-viewport {
+    margin: auto;
+    width: 50vw;
+}
 .example-item {
     height: 5vw;
 }
